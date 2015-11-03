@@ -14,7 +14,10 @@ call_user_func(function() {
         [
             'type' => 'rectangle',
             'shape' => [
-                'stroke' => ['color' => 'black', 'size' => 1],
+                'stroke' => [
+                    'color' => 'black',
+                    'size' => 1
+                ],
                 'foreground' => ['color' => 'red'],
                 'background' => ['color' => 'white']
             ],
@@ -23,7 +26,10 @@ call_user_func(function() {
         [
             'type' => 'circle',
             'shape' => [
-                'stroke' => ['color' => 'black', 'size' => 1],
+                'stroke' => [
+                    'color' => 'black',
+                    'size' => 1
+                ],
                 'foreground' => ['color' => 'red'],
                 'background' => ['color' => 'white']
             ],
