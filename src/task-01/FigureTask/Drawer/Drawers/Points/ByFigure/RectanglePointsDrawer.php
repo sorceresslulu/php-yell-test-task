@@ -23,7 +23,16 @@ class RectanglePointsDrawer extends AbstractPointsDrawer
     /**
      * @inheritDoc
      */
-    public function draw() {
-        throw new \Exception('Not implemented');
+    public function render() {
+        $figure = $this->rectangleFigure;
+
+        return sprintf(
+            ' [*] Render rectangle/points: size %d, stroke: [%d, %s], background: [%s], foreground: [%s]',
+            $figure->getRectangleAttributes()->getSize(),
+            $figure->getShapeAttributes()->getStrokeAttributes()->getSize(),
+            $figure->getShapeAttributes()->getStrokeAttributes()->getColor(),
+            $figure->getShapeAttributes()->getBackgroundAttributes()->getColor(),
+            $figure->getShapeAttributes()->getForegroundAttributes()->getColor()
+        );
     }
 }

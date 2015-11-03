@@ -4,8 +4,8 @@ namespace FigureTask\Drawer;
 interface DrawerInterface
 {
     /**
-     * Render and returns result
+     * Render figure and returns result
      * @return mixed
      */
-    public function draw();
+    public function render();
 }

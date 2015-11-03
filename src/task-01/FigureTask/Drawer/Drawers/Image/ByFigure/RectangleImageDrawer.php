@@ -39,7 +39,16 @@ class RectangleImageDrawer extends AbstractImageDrawer
     /**
      * @inheritDoc
      */
-    public function draw() {
-        throw new \Exception('Not implemented');
+    public function render() {
+        $figure = $this->rectangleFigure;
+
+        return sprintf(
+            ' [*] Render rectangle/image: size %d, stroke: [%d, %s], background: [%s], foreground: [%s]',
+            $figure->getRectangleAttributes()->getSize(),
+            $figure->getShapeAttributes()->getStrokeAttributes()->getSize(),
+            $figure->getShapeAttributes()->getStrokeAttributes()->getColor(),
+            $figure->getShapeAttributes()->getBackgroundAttributes()->getColor(),
+            $figure->getShapeAttributes()->getForegroundAttributes()->getColor()
+        );
     }
 }

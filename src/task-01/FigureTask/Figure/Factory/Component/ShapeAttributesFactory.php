@@ -1,5 +1,5 @@
 <?php
-namespace FigureTask\Figure\Factory\Components;
+namespace FigureTask\Figure\Factory\Component;
 
 use FigureTask\Figure\Common\Attributes\BackgroundAttributes;
 use FigureTask\Figure\Common\Attributes\ForegroundAttributes;

@@ -39,7 +39,16 @@ class CircleImageDrawer extends AbstractImageDrawer
     /**
      * @inheritDoc
      */
-    public function draw() {
-        throw new \Exception('Not implemented');
+    public function render() {
+        $figure = $this->circleFigure;
+
+        return sprintf(
+            ' [*] Render circle/image: radius %d, stroke: [%d, %s], background: [%s], foreground: [%s]',
+            $figure->getCircleAttributes()->getRadius(),
+            $figure->getShapeAttributes()->getStrokeAttributes()->getSize(),
+            $figure->getShapeAttributes()->getStrokeAttributes()->getColor(),
+            $figure->getShapeAttributes()->getBackgroundAttributes()->getColor(),
+            $figure->getShapeAttributes()->getForegroundAttributes()->getColor()
+        );
     }
 }

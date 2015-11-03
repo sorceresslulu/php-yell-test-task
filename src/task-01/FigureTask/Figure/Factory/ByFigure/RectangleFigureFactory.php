@@ -1,7 +1,7 @@
 <?php
 namespace FigureTask\Figure\Factory\ByFigure;
 
-use FigureTask\Figure\Factory\Components\ShapeAttributesFactory;
+use FigureTask\Figure\Factory\Component\ShapeAttributesFactory;
 use FigureTask\Figure\Factory\FigureFactoryInterface;
 use FigureTask\Figure\Figures\Rectangle\RectangleAttributes;
 use FigureTask\Figure\Figures\Rectangle\RectangleFigure;
