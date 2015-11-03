@@ -1,7 +1,7 @@
 <?php
-namespace FigureTask\Figure\Attributes\Common;
+namespace FigureTask\Figure\Common\Attributes;
 
-class BackgroundAttributes
+class ForegroundAttributes
 {
     /**
      * Color
@@ -10,7 +10,7 @@ class BackgroundAttributes
     private $color;
 
     /**
-     * BackgroundAttributes constructor.
+     * ForegroundAttributes constructor.
      * @param mixed $color
      */
     public function __construct($color) {

@@ -1,5 +1,5 @@
 <?php
-namespace FigureTask\Figure\Attributes\Common;
+namespace FigureTask\Figure\Common\Attributes;
 
 class StrokeAttributes
 {
@@ -24,7 +24,7 @@ class StrokeAttributes
         $this->size = $size;
         $this->color = $color;
     }
-    s
+
     /**
      * Returns size
      * @return int

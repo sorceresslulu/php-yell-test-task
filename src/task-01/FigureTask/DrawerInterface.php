@@ -1,5 +1,5 @@
 <?php
-namespace FigureTask\Drawer;
+namespace FigureTask;
 
 interface DrawerInterface
 {

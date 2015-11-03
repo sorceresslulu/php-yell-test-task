@@ -1,8 +1,7 @@
 <?php
 namespace FigureTask\Figure;
 
-use FigureTask\Drawer\DrawerInteface;
-use FigureTask\Figure\Attributes\ShapeAttributes;
+use FigureTask\Figure\Common\ShapeAttributes;
 
 interface FigureInterface
 {
