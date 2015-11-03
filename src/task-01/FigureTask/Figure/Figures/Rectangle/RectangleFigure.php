@@ -30,6 +30,17 @@ class RectangleFigure implements FigureInterface
     }
 
     /**
+     * @inheritDoc
+     */
+    public function getAttributes() {
+        return [
+            'shape' => $this->getShapeAttributes(),
+            'rectangle' => $this->getRectangleAttributes()
+        ];
+    }
+
+
+    /**
      * Returns shape attributes
      * @return ShapeAttributes
      */

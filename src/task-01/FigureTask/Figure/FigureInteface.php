@@ -6,10 +6,10 @@ use FigureTask\Figure\Common\ShapeAttributes;
 interface FigureInterface
 {
     /**
-     * Returns shape(common) attributes
-     * @return ShapeAttributes
+     * Returns attributes
+     * @return array
      */
-    public function getShapeAttributes();
+    public function getAttributes();
 
     /*
      * Nope.

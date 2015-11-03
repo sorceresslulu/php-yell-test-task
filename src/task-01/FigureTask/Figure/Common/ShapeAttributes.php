@@ -2,6 +2,7 @@
 namespace FigureTask\Figure\Common;
 
 use FigureTask\Figure\Common\Attributes\BackgroundAttributes;
+use FigureTask\Figure\Common\Attributes\ForegroundAttributes;
 use FigureTask\Figure\Common\Attributes\StrokeAttributes;
 
 class ShapeAttributes
@@ -14,7 +15,7 @@ class ShapeAttributes
 
     /**
      * ForegroundAttributes
-     * @var StrokeAttributes
+     * @var ForegroundAttributes
      */
     private $foregroundAttributes;
 
@@ -27,10 +28,10 @@ class ShapeAttributes
     /**
      * ShapeAttributes constructor.
      * @param StrokeAttributes $strokeAttributes
-     * @param StrokeAttributes $foregroundAttributes
+     * @param ForegroundAttributes $foregroundAttributes
      * @param BackgroundAttributes $backgroundAttributes
      */
-    public function __construct(StrokeAttributes $strokeAttributes, StrokeAttributes $foregroundAttributes, BackgroundAttributes $backgroundAttributes) {
+    public function __construct(StrokeAttributes $strokeAttributes, ForegroundAttributes $foregroundAttributes, BackgroundAttributes $backgroundAttributes) {
         $this->strokeAttributes = $strokeAttributes;
         $this->foregroundAttributes = $foregroundAttributes;
         $this->backgroundAttributes = $backgroundAttributes;

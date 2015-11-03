@@ -29,6 +29,17 @@ class CircleFigure implements FigureInterface
     }
 
     /**
+     * @inheritDoc
+     */
+    public function getAttributes() {
+        return [
+            'shape' => $this->getShapeAttributes(),
+            'circle' => $this->getCircleAttributes()
+        ];
+    }
+
+
+    /**
      * Returns shape attributes
      * @return ShapeAttributes
      */
