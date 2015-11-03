@@ -1,9 +1,7 @@
 <?php
 namespace FigureTask\Drawer\Drawers\Image;
 
-use FigureTask\Drawer\RenderInterface;
-
-class ImageRenderOptions implements RenderInterface
+class ImageRenderOptions
 {
     /**
      * Output Filename
@@ -33,13 +31,6 @@ class ImageRenderOptions implements RenderInterface
         $this->outputFilename = $outputFilename;
         $this->width = $width;
         $this->height = $height;
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function render() {
-        throw new \Exception('Not implemented');
     }
 
     /**
